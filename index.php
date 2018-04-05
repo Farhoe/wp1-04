@@ -10,17 +10,36 @@
 
     $homelessmoney=25;
     $vodkaPrice=119;
-    $student=$homelessmoney+17;
-    $interview=$student+40;
-    $richboi=$interview+100;
-    $residents=$richboi-50;
+    $student=17;
+    $interview=40;
+    $richboi=100;
+    $residents=50;
      ?>
+     <p> <?php echo "Bezdomovec momentálně vlastní $homelessmoney kč ";
+     $homelessmoney=$homelessmoney+$student ?> </p>
 
-  <p>Bezdomovec vlastní <?php echo $homelessmoney ?> </p>
-  <p> Soucítící studentka, čekající na vlak, vkládá do čepice 17 Kč. Bezdomovec nyní má  <?php echo $student; ?> </p>
-  <p> Muž, který právě skončil úspěšně s přijímacím pracovním pohovorem, věnuje bezdomovci peníze v hodnotě 40 Kč. Bezdomovec nyní má <?php echo $interview ?> </p>
-  <p>Před vstupem do pendolina jde kolem bezdomovce bohatý podnikatel. Aby neměl těžkou peněženku zbaví se drobné bankovky v hodnotě 100 Kč. Bezdomovec nyní má  <?php echo $richboi ?></p>
-  <p>Kolem čepice bezdomovce se nenápadně prochází skupinka nepřizpůsobivých spoluobčanů a sebere mu z ní 50 Kč. Bezdomovec nyní má <?php echo $residents ?> </p>
+    <p>  <?php  echo "Studentka přihodila. Bezdomovec momentálně vlastní $homelessmoney kč";
+     $homelessmoney=$homelessmoney+$interview ?> </p>
+
+    <p> <?php echo "Chlap kterýmu dopadl dobře pracovní pohovor přihodil $interview. Bezdomovec momentálně vlastní $homelessmoney kč";
+     $homelessmoney=$homelessmoney+$richboi ?> </p>
+
+    <p> <?php   echo "Podnikatel si odlehčil peněženku o $richboi. Bezdomovec momentálně vlastní $homelessmoney kč";
+     $homelessmoney=$homelessmoney-$residents ?> </p>
+
+    <p> <?php  echo "Zlí lidi ukradly bezdomákovi $residents. Bezdomovec momentálně vlastní $homelessmoney kč"; ?> </p>
+
+    <p> <?php echo "Chudák bezdomák má už jenom $homelessmoney kč"; ?></p>
+
+    <?php
+
+    if ($homelessmoney >= $vodkaPrice) {   $homelessmoney=$homelessmoney-$vodkaPrice;
+      echo "Bezdomovec koupil vodku za $vodkaPrice Kč. Po transakci vlastní $homelessmoney kč";
+
+
+    }
+
+    ?>
 
 
 
