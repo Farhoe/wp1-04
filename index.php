@@ -34,7 +34,7 @@
     <?php
 
     if ($homelessmoney >= $vodkaPrice) {   $homelessmoney-=$vodkaPrice;
-      echo "Bezdomovec koupil vodku za $vodkaPrice peněz málo známých, po transakci vlastní $homelessmoney korun českých";
+      echo "Bezdomovec koupil vodku za $vodkaPrice peněz málo známých, po koupi alkoholového nápoje má u sebe $homelessmoney peněz vlastních.";
 
 
     }else { echo "Chudák bezdomák ani na vodku nemá. Špatný to věk, smutný to člověk.";
