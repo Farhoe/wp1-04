@@ -15,27 +15,29 @@
     $richboi=100;
     $residents=50;
      ?>
-     <p> <?php echo "Bezdomovec momentálně vlastní $homelessmoney kč ";
-     $homelessmoney=$homelessmoney+$student ?> </p>
+     <p> <?php echo "Bezdomovec momentálně vlastní $homelessmoney,- ";
+     $homelessmoney+=$student ?> </p>
 
-    <p>  <?php  echo "Studentka přihodila. Bezdomovec momentálně vlastní $homelessmoney kč";
-     $homelessmoney=$homelessmoney+$interview ?> </p>
+    <p>  <?php  echo "Studentka přihodila $student,-. Bezdomovec momentálně vlastní $homelessmoney,-";
+     $homelessmoney+=$interview ?> </p>
 
-    <p> <?php echo "Chlap kterýmu dopadl dobře pracovní pohovor přihodil $interview. Bezdomovec momentálně vlastní $homelessmoney kč";
-     $homelessmoney=$homelessmoney+$richboi ?> </p>
+    <p> <?php echo "Chlap kterýmu dopadl dobře pracovní pohovor přihodil $interview,-. Bezdomovec momentálně vlastní $homelessmoney,-";
+     $homelessmoney+=$richboi ?> </p>
 
-    <p> <?php   echo "Podnikatel si odlehčil peněženku o $richboi. Bezdomovec momentálně vlastní $homelessmoney kč";
-     $homelessmoney=$homelessmoney-$residents ?> </p>
+    <p> <?php   echo "Podnikatel si odlehčil peněženku o $richboi,-. Bezdomovec momentálně vlastní $homelessmoney,-";
+     $homelessmoney-=$residents ?> </p>
 
-    <p> <?php  echo "Zlí lidi ukradly bezdomákovi $residents. Bezdomovec momentálně vlastní $homelessmoney kč"; ?> </p>
+    <p> <?php  echo "Zlí lidi ukradly bezdomákovi $residents,-. Bezdomovec momentálně vlastní $homelessmoney,-"; ?> </p>
 
-    <p> <?php echo "Chudák bezdomák má už jenom $homelessmoney kč"; ?></p>
+    <p> <?php echo "Chudák bezdomák má už jenom $homelessmoney,-"; ?></p>
 
     <?php
 
-    if ($homelessmoney >= $vodkaPrice) {   $homelessmoney=$homelessmoney-$vodkaPrice;
-      echo "Bezdomovec koupil vodku za $vodkaPrice Kč. Po transakci vlastní $homelessmoney kč";
+    if ($homelessmoney >= $vodkaPrice) {   $homelessmoney-=$vodkaPrice;
+      echo "Bezdomovec koupil vodku za $vodkaPrice,-. Po transakci vlastní $homelessmoney,-";
 
+
+    }else { echo "Chudák bezdomák nemá ani na vodku. Smutný to člověk.";
 
     }
 
